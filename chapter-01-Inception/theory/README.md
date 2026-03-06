@@ -23,6 +23,8 @@ A: The crossorigin attribute sets the mode of the request to an HTTP CORS Reques
 Syntax
 
 <script crossorigin="anonymous|use-credentials">
+
+ 
 Q: What is difference between React and ReactDOM?
 
 A: React is a JavaScript library for building User Interfaces whereas ReactDOM is also JavaScript library that allows React to interact with the DOM. The react package contains React.createElement(), React.Component, React.Children, and other helpers related to elements and component classes. You can think of these as the isomorphic or universal helpers that you need to build components. The react-dom package contains ReactDOM.render(), and in react-dom/server we have server-side rendering support with ReactDOMServer.renderToString() and ReactDOMServer.renderToStaticMarkup().
@@ -38,11 +40,14 @@ A: Async - The async attribute is a boolean attribute. The script is downloaded 
 Syntax
 
 <script src="demo_async.js" async></script>
+
+
 Defer - The defer attribute is a boolean attribute. The script is downloaded in parallel(in the background) to parsing the page, and executed after the page has finished parsing(when browser finished DOM construction). The defer attribute tells the browser not to wait for the script. Instead, the browser will continue to process the HTML, build DOM.
 
 Syntax
 
 <script src="demo_defer.js" defer></script>
+
 Unless you're supporting ancient legacy systems, always add type="module" to all your script tags:
 
 <script type="module" src="main.js"></script> and place the tag inside <head>
